@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Joaquin Preiti</title>
+  <link rel="shortcut icon" href="img/icon.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          fontFamily: {
+            nunito: ['"Nunito Sans"', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+</head>
+
+<body class="font-nunito bg-gray-100 dark:bg-gray-900 transition-colors leading-relaxed">
+  <!-- Navbar -->
+  <header
+    class="fixed top-0 left-0 w-full bg-white/50 dark:bg-gray-900/50 backdrop-blur-md shadow z-50 transition-colors leading-relaxed">
+    <nav class="max-w-6xl mx-auto flex justify-center items-center py-6 px-6">
+      <ul class="flex space-x-5 items-center">
+        <li>
+          <a href="#sobre-mi" class="relative hover:text-indigo-600 dark:hover:text-purple-600 font-bold transition duration-300 
+          after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-[2px] after:bottom-0 after:left-0 
+          after:bg-indigo-600 dark:after:bg-purple-600 after:origin-right after:transition-transform after:duration-300 
+          hover:after:scale-x-100 hover:after:origin-left text-black dark:text-white">
+            Sobre mí
+          </a>
+        </li>
+        <li>
+          <a href="#proyectos" class="relative hover:text-indigo-600 dark:hover:text-purple-600 font-bold transition duration-300 
+          after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-[2px] after:bottom-0 after:left-0 
+          after:bg-indigo-600 dark:after:bg-purple-600 after:origin-right after:transition-transform after:duration-300 
+          hover:after:scale-x-100 hover:after:origin-left text-black dark:text-white">
+            Proyectos
+          </a>
+        </li>
+        <li>
+          <a href="#experiencia" class="relative hover:text-indigo-600 dark:hover:text-purple-600 font-bold transition duration-300 
+          after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-[2px] after:bottom-0 after:left-0 
+          after:bg-indigo-600 dark:after:bg-purple-600 after:origin-right after:transition-transform after:duration-300 
+          hover:after:scale-x-100 hover:after:origin-left text-black dark:text-white">
+            Experiencia
+          </a>
+        </li>
+        <button id="theme-toggle" class="text-md ml-4">
+          <i class="fa-solid fa-moon text-black dark:text-white"></i>
+        </button>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="bg-gray-100 dark:bg-gray-900 transition-colors leading-relaxed">
+    <!-- Inicio -->
+    <section
+      class="h-screen flex flex-col justify-center items-center bg-gradient-to-r from-indigo-500 to-purple-600 text-white text-center dark:bg-gradient-to-r dark:from-gray-900 dark:via-indigo-900 dark:to-purple-900">
+      <h2 class="text-5xl font-extrabold mb-4">¡Hola! Soy Joaquin</h2>
+      <p class="text-xl max-w-xl">Desarrollador web apasionado por crear experiencias digitales atractivas, funcionales
+        y
+        modernas.</p>
+      <a href="#sobre-mi"
+        class="mt-6 px-6 py-3 bg-white text-indigo-600 rounded-full font-semibold shadow hover:shadow-lg transition">Ver
+        más</a>
+    </section>
+
+    <!-- Sobre mí -->
+    <section id="sobre-mi" class="max-w-6xl mx-auto py-16 px-6">
+      <h3
+        class="text-3xl text-black dark:text-white font-bold text-center mb-12 relative inline-block after:content-[''] after:block after:w-16 after:h-[3px] after:bg-gradient-to-r after:from-indigo-500 after:to-purple-600 after:mx-auto after:mt-2">
+        Sobre mí
+      </h3>
+
+      <div
+        class="flex flex-col md:flex-row items-center md:items-start gap-8 bg-white/80 dark:bg-gray-900/70 rounded-2xl shadow-lg p-10">
+
+        <!-- Imagen -->
+        <div class="flex-shrink-0 mx-auto md:mx-0">
+          <div class="relative w-80 h-80">
+            <div class="absolute inset-0 rounded-3xl bg-gradient-to-tr from-indigo-500 to-purple-600 p-[3px]">
+              <img src="img/joaco.webp" alt="Foto joaco" class="w-full h-full object-cover rounded-3xl shadow-md" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Texto -->
+        <div class="flex-1 text-center md:text-left">
+          <!-- Nombre -->
+          <h2 class="text-4xl font-bold text-purple-600 dark:text-indigo-500 mb-2">Joaquín Preiti</h2>
+          <p class="text-lg text-gray-600 dark:text-gray-500 mb-5">FullStack developer | Diseñador y programador web</p>
+          <p class="text-md text-gray-500 dark:text-gray-100 mb-5">
+            Apasionado por crear experiencias digitales modernas y funcionales. Siempre buscando
+            aprender nuevas tecnologías y mejorar mis habilidades de diseño y desarrollo.
+          </p>
+
+          <!-- Badges con iconos -->
+          <div class="flex flex-wrap justify-center md:justify-start gap-3 mb-5">
+            <!-- HTML -->
+            <span
+              class="flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full bg-orange-100 text-orange-600">
+              <i class="fa-brands fa-html5"></i> HTML
+            </span>
+            <!-- CSS -->
+            <span class="flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full bg-blue-100 text-blue-600">
+              <i class="fa-brands fa-css3"></i> CSS
+            </span>
+            <!-- JS -->
+            <span
+              class="flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full bg-yellow-100 text-yellow-600">
+              <i class="fa-brands fa-js"></i> JavaScript
+            </span>
+            <!-- Vue -->
+            <span
+              class="flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full bg-green-100 text-green-600">
+              <i class="fa-brands fa-vuejs"></i> Vue
+            </span>
+            <!-- React -->
+            <span class="flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full bg-sky-100 text-sky-600">
+              <i class="fa-brands fa-react"></i> React
+            </span>
+            <!-- Node.js -->
+            <span
+              class="flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full bg-green-300 text-green-800">
+              <i class="fa-brands fa-node-js"></i> Node.js
+            </span>
+            <!-- Express -->
+            <span
+              class="flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full bg-gray-200 text-gray-700 dark:bg-gray-800 dark:text-gray-300">
+              <i class="fa-solid fa-code"></i> Express
+            </span>
+            <!-- Laravel -->
+            <span class="flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full bg-red-100 text-red-600">
+              <i class="fa-brands fa-laravel"></i> Laravel
+            </span>
+            <!-- PHP -->
+            <span
+              class="flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full bg-indigo-200 text-indigo-800">
+              <i class="fa-brands fa-php"></i> PHP
+            </span>
+            <!-- WordPress -->
+            <span class="flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full bg-blue-400 text-blue-900">
+              <i class="fa-brands fa-wordpress"></i> WordPress
+            </span>
+            <!-- Bootstrap -->
+            <span
+              class="flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full bg-indigo-100 text-indigo-600">
+              <i class="fa-brands fa-bootstrap"></i> Bootstrap
+            </span>
+            <!-- Tailwind -->
+            <span
+              class="flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full bg-purple-100 text-purple-600">
+              <i class="fa-solid fa-wind"></i> Tailwind
+            </span>
+            <!-- MongoDB -->
+            <span
+              class="flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full bg-green-200 text-green-800">
+              <i class="fa-solid fa-database"></i> MongoDB
+            </span>
+            <!-- Firebase -->
+            <span
+              class="flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full bg-yellow-200 text-yellow-800">
+              <i class="fa-solid fa-fire"></i> Firebase
+            </span>
+            <!-- MySQL -->
+            <span class="flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full bg-blue-300 text-blue-900">
+              <i class="fa-solid fa-database"></i> MySQL
+            </span>
+            <!-- Figma -->
+            <span class="flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full bg-pink-100 text-pink-600">
+              <i class="fa-brands fa-figma"></i> Figma
+            </span>
+            <!-- Photoshop -->
+            <span class="flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full bg-blue-200 text-blue-700">
+              <i class="fa-solid fa-image"></i> Photoshop
+            </span>
+            <!-- Illustrator -->
+            <span
+              class="flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full bg-orange-200 text-orange-700">
+              <i class="fa-solid fa-pen-nib"></i> Illustrator
+            </span>
+
+
+          </div>
+
+          <!-- Botones -->
+          <div class="flex flex-wrap justify-center md:justify-start gap-4">
+            <a href="https://github.com/JoaquinPreiti" target="_blank"
+              class="flex items-center gap-2 px-5 py-2 rounded-full bg-gray-800 text-white hover:bg-gray-700 transition">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/joaquin-preiti-a861a7352" target="_blank"
+              class="flex items-center gap-2 px-5 py-2 rounded-full bg-blue-600 text-white hover:bg-blue-500 transition">
+              <i class="fa-brands fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="CV_Joaquin_Preiti.pdf" download
+              class="flex items-center gap-2 px-5 py-2 rounded-full bg-green-600 text-white hover:bg-green-500 transition">
+              <i class="fa-solid fa-file-arrow-down"></i> Descargar CV
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="max-w-5xl mx-auto py-16 px-6">
+      <h3
+        class="text-black dark:text-white text-3xl font-bold text-center mb-8 relative inline-block after:content-[''] after:block after:w-16 after:h-[3px] after:bg-gradient-to-r after:from-indigo-500 after:to-purple-600 after:mx-auto after:mt-2">
+        Proyectos
+      </h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- FABO -->
+        <div
+          class="bg-white dark:bg-gray-900 rounded-xl shadow hover:shadow-xl transition overflow-hidden flex flex-col">
+          <a href="https://fabo.vercel.app/" target="_blank">
+            <!-- Imagen -->
+            <img src="img/FABO.png" alt="Proyecto FABO" class="w-full h-40 object-cover">
+          </a>
+          <div class="p-6 flex-1 flex flex-col">
+            <h4 class="text-xl font-semibold mb-2 text-purple-600 dark:text-indigo-500">FABO</h4>
+            <p class="text-gray-600 dark:text-gray-300 mb-4 text-xs">
+              FABO es una aplicación web desarrollada con Vue, Firebase y Tailwind, que permite a los usuarios crear
+              equipos, organizar partidos y gestionar eventos deportivos en fútbol, básquet y tenis.
+            </p>
+            <!-- Badges -->
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span
+                class="px-3 py-1 text-xs font-medium rounded-full flex items-center bg-orange-100 text-orange-600 gap-2">
+                <i class="fa-brands fa-html5"></i>HTML
+              </span>
+              <span
+                class="px-3 py-1 text-xs font-medium rounded-full flex items-center bg-blue-100 text-blue-600 gap-2">
+                <i class="fa-brands fa-css3-alt"></i>CSS
+              </span>
+              <span
+                class="px-3 py-1 text-xs font-medium rounded-full flex items-center bg-yellow-100 text-yellow-600 gap-2">
+                <i class="fa-brands fa-js"></i>JavaScript
+              </span>
+              <span
+                class="px-3 py-1 text-xs font-medium rounded-full flex items-center bg-green-100 text-green-600 gap-2">
+                <i class="fa-brands fa-vuejs"></i>Vue
+              </span>
+              <span
+                class="px-3 py-1 text-xs font-medium rounded-full flex items-center bg-yellow-200 text-yellow-800 gap-2">
+                <i class="fa-solid fa-fire"></i>Firebase
+              </span>
+              <span
+                class="px-3 py-1 text-xs font-medium rounded-full flex items-center bg-purple-100 text-purple-600 gap-2">
+                <i class="fa-solid fa-wind"></i>Tailwind
+              </span>
+            </div>
+            <!-- Botón -->
+            <a href="https://github.com/mtias2023/FABO" target="_blank"
+              class="mt-auto inline-flex items-center justify-center gap-2 px-4 py-2 rounded-full border border-gray-400 text-black dark:text-gray-400 dark:hover:bg-gray-800 hover:bg-gray-200 transition">
+              <i class="fa-brands fa-github"></i> Ver código
+            </a>
+          </div>
+        </div>
+
+        <!-- FABO - LandingPage -->
+        <div
+          class="bg-white dark:bg-gray-900 rounded-xl shadow hover:shadow-xl transition overflow-hidden flex flex-col">
+          <a href="https://landing-page-fabo.vercel.app//" target="_blank">
+            <!-- Imagen -->
+            <img src="img/FABO-Landing.png" alt="Proyecto FABO-LandingPage" class="w-full h-40 object-cover">
+          </a>
+          <div class="p-6 flex-1 flex flex-col">
+            <h4 class="text-xl font-semibold mb-2 text-purple-600 dark:text-indigo-500">FABO - LandingPage</h4>
+            <p class="text-gray-600 dark:text-gray-300 mb-4 text-xs">
+              LandingPage promocional del proyecto FABO.
+            </p>
+            <!-- Badges -->
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span
+                class="px-3 py-1 text-xs font-medium rounded-full flex items-center bg-orange-100 text-orange-600 gap-2">
+                <i class="fa-brands fa-html5"></i>HTML
+              </span>
+              <span
+                class="px-3 py-1 text-xs font-medium rounded-full flex items-center bg-blue-100 text-blue-600 gap-2">
+                <i class="fa-brands fa-css3-alt"></i>CSS
+              </span>
+              <span
+                class="px-3 py-1 text-xs font-medium rounded-full flex items-center bg-yellow-100 text-yellow-600 gap-2">
+                <i class="fa-brands fa-js"></i>JavaScript
+              </span>
+              <span
+                class="px-3 py-1 text-xs font-medium rounded-full flex items-center bg-purple-100 text-purple-600 gap-2">
+                <i class="fa-solid fa-wind"></i>Tailwind
+              </span>
+            </div>
+            <!-- Botón -->
+            <a href="https://github.com/mtias2023/Landing-page-FABO" target="_blank"
+              class="mt-auto inline-flex items-center justify-center gap-2 px-4 py-2 rounded-full border border-gray-400 text-black dark:text-gray-400 dark:hover:bg-gray-800 hover:bg-gray-200 transition">
+              <i class="fa-brands fa-github"></i> Ver código
+            </a>
+          </div>
+        </div>
+
+        <!-- Cimax -->
+        <div
+          class="bg-white dark:bg-gray-900 rounded-xl shadow hover:shadow-xl transition overflow-hidden flex flex-col">
+          <a href="https://cimax-orcin.vercel.app/" target="_blank">
+            <!-- Imagen -->
+            <img src="img/Cimax.png" alt="Proyecto Cimax" class="w-full h-40 object-cover">
+          </a>
+          <div class="p-6 flex-1 flex flex-col">
+            <h4 class="text-xl font-semibold mb-2 text-purple-600 dark:text-indigo-500">Cimax</h4>
+            <p class="text-gray-600 dark:text-gray-300 mb-4 text-xs">
+              Aplicación web construida con Vue.js que integra la API de The Movie Database (TMDb). Ofrece búsqueda de
+              películas por título, filtros de clasificación (incluyendo contenido para adultos) y la posibilidad de
+              crear una lista de favoritas almacenada localmente en el navegador.
+            </p>
+            <!-- Badges -->
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span
+                class="px-3 py-1 text-xs font-medium rounded-full flex items-center bg-orange-100 text-orange-600 gap-2">
+                <i class="fa-brands fa-html5"></i>HTML
+              </span>
+              <span
+                class="px-3 py-1 text-xs font-medium rounded-full flex items-center bg-blue-100 text-blue-600 gap-2">
+                <i class="fa-brands fa-css3-alt"></i>CSS
+              </span>
+              <span
+                class="px-3 py-1 text-xs font-medium rounded-full flex items-center bg-yellow-100 text-yellow-600 gap-2">
+                <i class="fa-brands fa-js"></i>JavaScript
+              </span>
+              <span
+                class="px-3 py-1 text-xs font-medium rounded-full flex items-center bg-green-100 text-green-600 gap-2">
+                <i class="fa-brands fa-vuejs"></i>Vue
+              </span>
+              <span
+                class="px-3 py-1 text-xs font-medium rounded-full flex items-center bg-purple-100 text-purple-600 gap-2">
+                <i class="fa-solid fa-wind"></i>Tailwind
+              </span>
+            </div>
+            <!-- Botón -->
+            <a href="https://github.com/JoaquinPreiti/Cimax" target="_blank"
+              class="mt-auto inline-flex items-center justify-center gap-2 px-4 py-2 rounded-full border border-gray-400 text-black dark:text-gray-400 dark:hover:bg-gray-800 hover:bg-gray-200 transition">
+              <i class="fa-brands fa-github"></i> Ver código
+            </a>
+          </div>
+        </div>
+
+        <!-- ChillPalace -->
+        <div
+          class="bg-white dark:bg-gray-900 rounded-xl shadow hover:shadow-xl transition overflow-hidden flex flex-col">
+          <a href="figma.com/proto/oRl71jnMNkN2QFJxL1XUkG/UserFlow---ChillPalace?node-id=178-152&p=f&t=6p1k7qzcrVv8Y28N-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=178%3A152"
+            target="_blank">
+            <!-- Imagen -->
+            <img src="img/ChillPalace.png" alt="Proyecto ChillPalace" class="w-full h-40 object-cover">
+          </a>
+          <div class="p-6 flex-1 flex flex-col">
+            <h4 class="text-xl font-semibold mb-2 text-purple-600 dark:text-indigo-500">ChillPalace</h4>
+            <p class="text-gray-600 dark:text-gray-300 mb-4 text-xs">
+              Diseño de E-commerce de perifericos gamer.
+            </p>
+            <!-- Badges -->
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span
+                class="px-3 py-1 text-xs font-medium rounded-full flex items-center bg-pink-100 text-pink-600 gap-2">
+                <i class="fa-brands fa-figma"></i>Figma
+              </span>
+            </div>
+            <!-- Botón -->
+            <a href="https://www.figma.com/design/oRl71jnMNkN2QFJxL1XUkG/UserFlow---ChillPalace?node-id=0-1&p=f&t=6p1k7qzcrVv8Y28N-0"
+              target="_blank"
+              class="mt-auto inline-flex items-center justify-center gap-2 px-4 py-2 rounded-full border border-pink-500 text-black dark:text-pink-200 dark:hover:bg-pink-800 hover:bg-pink-200 transition">
+              <i class="fa-brands fa-figma"></i> Ver diseño
+            </a>
+          </div>
+        </div>
+
+        <!-- GoodSK8 -->
+        <div
+          class="bg-white dark:bg-gray-900 rounded-xl shadow hover:shadow-xl transition overflow-hidden flex flex-col">
+          <a href="https://joaquinpreiti.github.io/GoodSK8/" target="_blank">
+            <!-- Imagen -->
+            <img src="img/GoodSK8.png" alt="Proyecto GoodSK8" class="w-full h-40 object-cover">
+          </a>
+          <div class="p-6 flex-1 flex flex-col">
+            <h4 class="text-xl font-semibold mb-2 text-purple-600 dark:text-indigo-500">GoodSK8</h4>
+            <p class="text-gray-600 dark:text-gray-300 mb-4 text-xs">
+              E-commerce de skate construido con HTML, JavaScript y CSS, destacando interactividad dinámica,
+              filtrado de productos, carrito de compras funcional y diseño responsivo.
+            </p>
+            <!-- Badges -->
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span
+                class="px-3 py-1 text-xs font-medium rounded-full flex items-center bg-orange-100 text-orange-600 gap-2">
+                <i class="fa-brands fa-html5"></i>HTML
+              </span>
+              <span
+                class="px-3 py-1 text-xs font-medium rounded-full flex items-center bg-blue-100 text-blue-600 gap-2">
+                <i class="fa-brands fa-css3-alt"></i>CSS
+              </span>
+              <span
+                class="px-3 py-1 text-xs font-medium rounded-full flex items-center bg-yellow-100 text-yellow-600 gap-2">
+                <i class="fa-brands fa-js"></i>JavaScript
+              </span>
+              <span
+                class="px-3 py-1 text-xs font-medium rounded-full flex items-center bg-indigo-100 text-indigo-600 gap-2">
+                <i class="fa-brands fa-bootstrap"></i> Bootstrap
+              </span>
+            </div>
+            <!-- Botón -->
+            <a href="https://github.com/JoaquinPreiti/GoodSK8" target="_blank"
+              class="mt-auto inline-flex items-center justify-center gap-2 px-4 py-2 rounded-full border border-gray-400 text-black dark:text-gray-400 dark:hover:bg-gray-800 hover:bg-gray-200 transition">
+              <i class="fa-brands fa-github"></i> Ver código
+            </a>
+          </div>
+        </div>
+
+        <!-- JKV -->
+        <div
+          class="bg-white dark:bg-gray-900 rounded-xl shadow hover:shadow-xl transition overflow-hidden flex flex-col">
+          <a href="https://github.com/JoaquinPreiti/JKV---React" target="_blank">
+            <!-- Imagen -->
+            <img src="img/JKV-React.png" alt="Proyecto GoodSK8" class="w-full h-40 object-cover">
+          </a>
+          <div class="p-6 flex-1 flex flex-col">
+            <h4 class="text-xl font-semibold mb-2 text-purple-600 dark:text-indigo-500">JKV</h4>
+            <p class="text-gray-600 dark:text-gray-300 mb-4 text-xs">
+              E-commerce de ropa desarrollado con React y una API propia, destacando filtrado avanzado de productos,
+              gestión de usuarios y un diseño moderno y totalmente responsivo.
+            </p>
+            <!-- Badges -->
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span
+                class="px-3 py-1 text-xs font-medium rounded-full flex items-center bg-orange-100 text-orange-600 gap-2">
+                <i class="fa-brands fa-html5"></i>HTML
+              </span>
+              <span
+                class="px-3 py-1 text-xs font-medium rounded-full flex items-center bg-blue-100 text-blue-600 gap-2">
+                <i class="fa-brands fa-css3-alt"></i>CSS
+              </span>
+              <span
+                class="px-3 py-1 text-xs font-medium rounded-full flex items-center bg-yellow-100 text-yellow-600 gap-2">
+                <i class="fa-brands fa-js"></i>JavaScript
+              </span>
+              <span
+                class="px-3 py-1 text-xs font-medium rounded-full flex items-center bg-indigo-100 text-indigo-600 gap-2">
+                <i class="fa-brands fa-bootstrap"></i> Bootstrap
+              </span>
+              <span class="px-3 py-1 text-xs font-medium rounded-full flex items-center bg-sky-100 text-sky-600 gap-2">
+                <i class="fa-brands fa-react"></i> React
+              </span>
+              <span
+                class="px-3 py-1 text-xs font-medium rounded-full flex items-center bg-gray-200 text-gray-700 dark:bg-gray-800 dark:text-gray-300 gap-2">
+                <i class="fa-solid fa-code"></i> Express
+              </span>
+              <span
+                class="px-3 py-1 text-xs font-medium rounded-full flex items-center bg-green-200 text-green-800 gap-2">
+                <i class="fa-solid fa-database"></i> MongoDB
+              </span>
+            </div>
+            <!-- Botón -->
+            <a href="https://github.com/JoaquinPreiti/JKV---React" target="_blank"
+              class="mt-auto inline-flex items-center justify-center gap-2 px-4 py-2 rounded-full border border-gray-400 text-black dark:text-gray-400 dark:hover:bg-gray-800 hover:bg-gray-200 transition">
+              <i class="fa-brands fa-github"></i> Ver código
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experiencia -->
+    <section id="experiencia" class="max-w-5xl mx-auto py-16 px-6">
+      <h3
+        class="text-black dark:text-white text-3xl font-bold text-center mb-8 relative inline-block after:content-[''] after:block after:w-16 after:h-[3px] after:bg-gradient-to-r after:from-indigo-500 after:to-purple-600 after:mx-auto after:mt-2">
+        Experiencia
+      </h3>
+      <div class="relative border-l-4 border-purple-600 dark:border-indigo-500 pl-6 space-y-10 rounded-md">
+        <div>
+          <h4 class="text-xl font-semibold text-purple-600 dark:text-indigo-400">Armado y asesoramiento de computadoras
+          </h4>
+          <p class="text-gray-800 dark:text-gray-300 font-semibold">Freelance</p>
+          <span class="text-gray-500 text-sm">2022 - Actualidad...</span>
+          <p class="text-gray-600 dark:text-gray-200">
+            Trabajo freelance en armado y asesoramiento de computadoras, ofreciendo soluciones técnicas y soporte
+            personalizado.
+          </p>
+        </div>
+        <div>
+          <h4 class="text-xl font-semibold text-purple-600 dark:text-indigo-400">Planimetría en formatos kml, kmz y cad.
+          </h4>
+          <p class="text-gray-800 dark:text-gray-300 font-semibold">Grupo ITTEL SRL</p>
+          <span class="text-gray-500 text-sm">2022 - 2023</span>
+          <p class="text-gray-600 dark:text-gray-200">Creacion y diseño de planos de redes FO y FTTH, en formato cad,
+            kmz y kml.</p>
+        </div>
+        <div>
+          <h4 class="text-xl font-semibold text-purple-600 dark:text-indigo-400">Diseño y programacion web</h4>
+          <p class="text-gray-800 dark:text-gray-300 font-semibold">Freelance</p>
+          <span class="text-gray-500 text-sm">2025 - Actualidad...</span>
+          <p class="text-gray-600 dark:text-gray-200">Freelance en diseño y programación web, creando sitios modernos,
+            responsivos y adaptados a las necesidades de cada cliente.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Botón de volver al inicio -->
+    <button id="volverArriba"
+      class="fixed bottom-4 right-4 dark:bg-indigo-500 bg-purple-600 text-white p-3 rounded-full shadow-md hover:bg-purple-700 dark:hover:bg-indigo-600 flex items-center justify-center w-10 h-10">
+      <i class="fa-solid fa-circle-up"></i>
+    </button>
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-6 mt-10">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+
+      <!-- Nombre / Marca personal -->
+      <div class="mb-4 md:mb-0 text-center md:text-left">
+        <h2 class="text-lg font-semibold text-gray-800 dark:text-white">Joaquin Preiti</h2>
+        <p class="text-sm text-gray-800 dark:text-white">Desarrollador Web FullStack Junior</p>
+      </div>
+
+      <!-- Navegación secundaria -->
+      <div class="flex space-x-6 text-md mb-4 md:mb-0">
+        <a href="#sobre-mi"
+          class="text-gray-700 font-bold dark:text-white hover:text-gray-900 dark:hover:text-gray-400 transition-colors">Sobre
+          mí</a>
+        <a href="#proyectos"
+          class="text-gray-700 font-bold dark:text-white hover:text-gray-900 dark:hover:text-gray-400 transition-colors">Proyectos</a>
+        <a href="#experiencia"
+          class="text-gray-700 font-bold dark:text-white hover:text-gray-900 dark:hover:text-gray-400 transition-colors">Experiencia</a>
+
+      </div>
+
+      <!-- Redes sociales -->
+      <div class="flex space-x-4 text-xl">
+        <a href="https://github.com/joaquinPreiti" target="_blank"
+          class="text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-400 transition-colors">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/joaquin-preiti-a861a7352" target="_blank"
+          class="text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-400 transition-colors">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:joaquinpreiti@gmail.com"
+          class="text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-400 transition-colors">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+
+    <div
+      class="text-center text-xs text-gray-500 dark:text-gray-200 mt-6 border-t border-gray-300 dark:border-gray-700 pt-4">
+      © 2025 Joaquin Preiti. Todos los derechos reservados.
+    </div>
+  </footer>
+  <script src="main.js" setup></script>
+</body>
+
+</html>
